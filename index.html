@@ -122,11 +122,18 @@ button:hover{transform:scale(1.05);}
 .memory-content img,
 .memory-content video{
     width:100%;
-    max-width:700px;
+    max-width:420px;
     border-radius:20px;
     margin-top:15px;
+    object-fit:cover;
 }
 
+    @media (max-width:600px){
+    .memory-content img,
+    .memory-content video{
+        max-width:300px;
+    }
+}
 /* PASSWORD */
 .passwordBox{
     margin-top:20px;
